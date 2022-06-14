@@ -23,7 +23,6 @@ comecar.addEventListener("click", function () {
         minutoAtual--;
         segundoAtual = 59;
       } else {
-        //alert("Acabou o Tempo!");
         document.getElementById("sound").play();
         clearInterval(interval);
       }
