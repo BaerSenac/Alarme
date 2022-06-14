@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Alarme</title>
+    <style>
+      * {
+        background: #28374a;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        text-align: center;
+      }
+      button {
+        background: #18212d;
+        color: white;
+        font-size: 20px;
+        padding: 8px 20px;
+        cursor: pointer;
+        border: 0;
+        border-radius: 30px;
+        margin: 10px;
+      }
+      select {
+        width: 70px;
+        height: 40px;
+        font-size: 1.2em;
+        color: #91acd0;
+        background-color: #161e29;
+        display: inline-block;
+        margin: 10px;
+        border: none;
+      }
+      h2 {
+        display: inline-block;
+        margin: 65px 0px 0px 40px;
+        font-weight: 500;
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <audio src="Som de alarme.mp3" id="sound" style="display: none"></audio>
+    <div class="container">
+      <h1>Projeto Alarme</h1>
+      <h2>Minutos:</h2>
+      <select name="minutos" id="minutos"></select>
+
+      <h2>Segundos:</h2>
+      <select name="segundos" id="segundos"></select>
+      <br />
+      <br />
+      <button id="comecar">Iniciar</button>
+      <button id="parar">Parar</button>
+      <div id="display">
+        <h3></h3>
+      </div>
+    </div>
+    <script src="alarme.js"></script>
+  </body>
+</html>
